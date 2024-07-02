@@ -2,11 +2,10 @@ import random
 
 
 def split(numbers):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    # Initialize pivot & lists
+    pivot = numbers[0]
+    left = []
+    right = []
 
     #################
     # Do not delete return statement
