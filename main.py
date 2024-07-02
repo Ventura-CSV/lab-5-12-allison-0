@@ -13,9 +13,7 @@ def split(numbers):
             left.append(n)
         else:
             right.append(n)
-    pivotList = []
-    pivotList.append(pivot)
-    numbers = left + pivotList + right
+    numbers = left + [pivot] + right
     #################
     # Do not delete return statement
     return numbers
