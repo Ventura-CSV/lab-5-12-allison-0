@@ -7,6 +7,15 @@ def split(numbers):
     left = []
     right = []
 
+    # Iterate through list starting from the second element
+    for n in numbers[1:]:
+        if n <= pivot:
+            left.append(n)
+        else:
+            right.append(n)
+    pivotList = []
+    pivotList.append(pivot)
+    numbers = left + pivotList + right
     #################
     # Do not delete return statement
     return numbers
